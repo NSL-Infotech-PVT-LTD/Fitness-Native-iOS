@@ -1,0 +1,86 @@
+PODS:
+  - Alamofire (4.8.2)
+  - FacebookCore (0.8.0):
+    - FBSDKCoreKit (~> 5.0)
+  - FacebookLogin (0.8.0):
+    - FacebookCore (~> 0.8.0)
+    - FBSDKCoreKit (~> 5.0)
+    - FBSDKLoginKit (~> 5.0)
+  - FacebookShare (0.8.0):
+    - FacebookCore (~> 0.8.0)
+    - FBSDKCoreKit (~> 5.0)
+    - FBSDKShareKit (~> 5.0)
+  - FBSDKCoreKit (5.5.0):
+    - FBSDKCoreKit/Basics (= 5.5.0)
+    - FBSDKCoreKit/Core (= 5.5.0)
+  - FBSDKCoreKit/Basics (5.5.0)
+  - FBSDKCoreKit/Core (5.5.0):
+    - FBSDKCoreKit/Basics
+  - FBSDKLoginKit (5.5.0):
+    - FBSDKCoreKit (~> 5.0)
+  - FBSDKShareKit (5.5.0):
+    - FBSDKCoreKit (~> 5.0)
+  - GoogleMaps (3.1.0):
+    - GoogleMaps/Maps (= 3.1.0)
+  - GoogleMaps/Base (3.1.0)
+  - GoogleMaps/Maps (3.1.0):
+    - GoogleMaps/Base
+  - GooglePlacePicker (3.1.0):
+    - GoogleMaps (= 3.1.0)
+    - GooglePlaces (= 3.1.0)
+  - GooglePlaces (3.1.0):
+    - GoogleMaps/Base (= 3.1.0)
+  - IQKeyboardManager (6.4.0)
+  - SideMenuSwift (2.0.2)
+  - SVProgressHUD (2.2.5)
+  - ZFRippleButton (0.6)
+
+DEPENDENCIES:
+  - Alamofire
+  - FacebookCore
+  - FacebookLogin
+  - FacebookShare
+  - GoogleMaps
+  - GooglePlacePicker
+  - GooglePlaces
+  - IQKeyboardManager
+  - SideMenuSwift
+  - SVProgressHUD
+  - ZFRippleButton
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - FacebookCore
+    - FacebookLogin
+    - FacebookShare
+    - FBSDKCoreKit
+    - FBSDKLoginKit
+    - FBSDKShareKit
+    - GoogleMaps
+    - GooglePlacePicker
+    - GooglePlaces
+    - IQKeyboardManager
+    - SideMenuSwift
+    - SVProgressHUD
+    - ZFRippleButton
+
+SPEC CHECKSUMS:
+  Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
+  FacebookCore: 563bb4cbcd7dd86cf89f3729252140bf256aacaa
+  FacebookLogin: 8b966ae661e95e7dba837d7cc49cc464ce003dba
+  FacebookShare: e75d5e81ef7bd7aab2f865446c4c27015b43bae6
+  FBSDKCoreKit: 7ade9cfea30eef2f6cf105a1aa904f89ea68fb7d
+  FBSDKLoginKit: bb28062f24e79590c44ba03297ca9bea4b6436d2
+  FBSDKShareKit: 6316a2dcd2fbc419c87281aa4c50ad0b6ed431e7
+  GoogleMaps: 5c13302e6fe6bb6e686b267196586b91cd594225
+  GooglePlacePicker: 1c60c2a26e9d1e73bcb0c6f89609db8d777d13c1
+  GooglePlaces: e874db179f2675c4f3eeda0b686b540273a578b0
+  IQKeyboardManager: fcef267266379c003181fc3592f6bdb8bf4db839
+  SideMenuSwift: ba10587929b9090c89105ec52739e6c60b9e50de
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  ZFRippleButton: 62ea35e209757704dea697d66489fe69c13d7b77
+
+PODFILE CHECKSUM: cee926a8a3a50be85fb6b2db61b34e0648fc56cb
+
+COCOAPODS: 1.7.5

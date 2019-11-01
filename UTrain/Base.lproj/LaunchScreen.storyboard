@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YHQ-gZ-Zew">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rectangle 6" translatesAutoresizingMaskIntoConstraints="NO" id="dDt-bI-E47">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="818"/>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DVS-fU-8HK">
+                                        <rect key="frame" x="122" y="326.5" width="170" height="165"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="U-TRAIN png logo" translatesAutoresizingMaskIntoConstraints="NO" id="XHF-tt-4mC">
+                                                <rect key="frame" x="0.0" y="0.0" width="170" height="165"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="165" id="4ri-Nk-bQM"/>
+                                            <constraint firstItem="XHF-tt-4mC" firstAttribute="leading" secondItem="DVS-fU-8HK" secondAttribute="leading" id="J1z-lD-Hil"/>
+                                            <constraint firstItem="XHF-tt-4mC" firstAttribute="top" secondItem="DVS-fU-8HK" secondAttribute="top" id="JSn-n8-8sv"/>
+                                            <constraint firstAttribute="bottom" secondItem="XHF-tt-4mC" secondAttribute="bottom" id="Rxv-YW-2da"/>
+                                            <constraint firstAttribute="width" constant="170" id="W7i-pa-tfO"/>
+                                            <constraint firstAttribute="trailing" secondItem="XHF-tt-4mC" secondAttribute="trailing" id="d1Z-YX-AHC"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="DVS-fU-8HK" firstAttribute="centerX" secondItem="YHQ-gZ-Zew" secondAttribute="centerX" id="8a2-J2-1y5"/>
+                                    <constraint firstItem="dDt-bI-E47" firstAttribute="top" secondItem="YHQ-gZ-Zew" secondAttribute="top" id="SVO-dz-Gco"/>
+                                    <constraint firstAttribute="bottom" secondItem="dDt-bI-E47" secondAttribute="bottom" id="UZN-oJ-535"/>
+                                    <constraint firstItem="dDt-bI-E47" firstAttribute="leading" secondItem="YHQ-gZ-Zew" secondAttribute="leading" id="Xk3-vJ-jKm"/>
+                                    <constraint firstItem="DVS-fU-8HK" firstAttribute="centerY" secondItem="YHQ-gZ-Zew" secondAttribute="centerY" id="cMc-86-h2Q"/>
+                                    <constraint firstAttribute="trailing" secondItem="dDt-bI-E47" secondAttribute="trailing" id="hYH-KD-el5"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="YHQ-gZ-Zew" secondAttribute="bottom" id="P3u-rS-C0B"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="YHQ-gZ-Zew" secondAttribute="trailing" id="SkJ-Fs-Wvy"/>
+                            <constraint firstItem="YHQ-gZ-Zew" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="aGs-Q0-A9E"/>
+                            <constraint firstItem="YHQ-gZ-Zew" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="xYB-tq-ggP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Rectangle 6" width="375" height="812"/>
+        <image name="U-TRAIN png logo" width="1024" height="1024"/>
+    </resources>
+</document>
