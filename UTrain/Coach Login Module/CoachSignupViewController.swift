@@ -127,7 +127,6 @@ class CoachSignupViewController: UIViewController {
             
         }
         
-        
     }
     
     func signup(){
@@ -312,7 +311,7 @@ extension CoachSignupViewController: UITextViewDelegate, UITextFieldDelegate{
         if textField == phoneTF{
             maxLength = 10
         } else if textField == passwordTF{
-            maxLength = 10
+            maxLength = 20
         } else if textField == hourlyRateTF{
             maxLength = 3
         }

@@ -26,8 +26,12 @@ class DashboardViewController: UIViewController {
         roundTabImgContainer?.clipsToBounds = true
         roundTabImgContainer?.layer.borderColor = UIColor.lightGray.cgColor
         roundTabImgContainer?.layer.borderWidth = 5
-        
-      
+    }
+    
+    class func instance()->DashboardViewController?{
+        let storyboard = UIStoryboard(name: "AthleteDashboard", bundle: nil)
+        let controller = storyboard.instantiateViewController(withIdentifier: "DashboardViewController") as? DashboardViewController
+        return controller
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

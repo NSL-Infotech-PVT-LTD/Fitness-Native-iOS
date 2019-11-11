@@ -131,7 +131,7 @@ class OrgLoginViewController: UIViewController {
         return true
     }
     
-    func checkValidatePassword(text: String) -> Bool{
+    func checkValidatePassword(text: String) -> Bool {
         
         if text == ""{
             alert(message: "Enter Password")

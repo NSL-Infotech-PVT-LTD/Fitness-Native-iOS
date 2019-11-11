@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SideMenuSwift
 
 class CoachLoginViewController: UIViewController {
 
@@ -95,12 +96,10 @@ class CoachLoginViewController: UIViewController {
         showIndicator()
         api.loginUser(url: API_ENDPOINTS.LOGIN.rawValue, params: params, viewController: self) { (model) in
             if model != nil{
-                //print("kokokokokokokokokokokokokokokoko")
-                guard let controller = AthleteDashboardVC.instance()
-                    else{
-                        return
-                }
-                self.navigationController?.pushViewController(controller, animated: true)
+
+                let storyboard = UIStoryboard(name: "AthleteDashboard", bundle: nil)
+                let controller = storyboard.instantiateViewController(withIdentifier: "SideMenuController") as? SideMenuController
+                self.navigationController?.pushViewController(controller!, animated: true)
                 
                 self.dataSource = model
             }

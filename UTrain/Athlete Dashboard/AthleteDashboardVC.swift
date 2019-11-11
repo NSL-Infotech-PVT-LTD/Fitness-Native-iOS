@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Pulley
+import SDWebImage
 
 class AthleteDashboardVC: UIViewController {
     
@@ -31,6 +33,9 @@ class AthleteDashboardVC: UIViewController {
     var coachArr = ["coach1","coach2","coach3"]
     var orgArr   = ["org1","org2","org3"]
     var imgArr   = ["mask_athlete","mask_coach","mask_org"]
+    var dataSource = [AthleteCoachListModel]()
+    var orgDatasource = [OrganisationListModel]()
+
 
     //MARK:- View Life-Cycle
     override func viewDidLoad() {
@@ -48,14 +53,14 @@ class AthleteDashboardVC: UIViewController {
         nearbyViewAllView?.rounded()
 
         
-        
-        
         containerView?.clipsToBounds = true
         containerView?.layer.cornerRadius = 25
         containerView?.layer.maskedCorners = [.layerMinXMinYCorner,.layerMaxXMinYCorner]
         containerView?.layer.shadowColor = UIColor.gray.cgColor
 //        containerView?.layer.borderColor = UIColor.gray.cgColor
         containerView?.layer.borderWidth = 1
+        getCoachList()
+        getOrgList()
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -74,6 +79,40 @@ class AthleteDashboardVC: UIViewController {
         return controller
     }
     
+    func getCoachList(){
+        api.delegate = self
+        var params = [String:Any]()
+        params = ["search": "",
+                  "limit":  1,
+                  "order_by": "latest"]
+        
+        showIndicator()
+        api.getCoachesList(url: API_ENDPOINTS.COACH_LIST.rawValue, params: params, viewController: self) { (model) in
+            if model != nil {
+                self.dataSource = model
+                self.coachCollectView?.reloadData()
+            }
+        }
+        
+    }
+    
+    func getOrgList(){
+        api.delegate = self
+        var params = [String:Any]()
+        params = ["search": "",
+                  "limit":  1,
+                  "order_by": "latest"]
+        
+        showIndicator()
+        api.getOrganisationList(url: API_ENDPOINTS.ORG_LIST.rawValue, params: params, viewController: self) { (model) in
+            if model != nil{
+                self.orgDatasource = model
+                self.orgCollectView?.reloadData()
+            }
+        }
+        
+    }
+    
     //MARK:- Action Buttons
     @IBAction func eventsActionBtn(_ sender: Any) {
         
@@ -89,11 +128,36 @@ class AthleteDashboardVC: UIViewController {
         pageController?.selectTab(.third)
     }
     
+    
     @IBAction func findSessionActionBtn(_ sender: Any) {
-        guard let controller = FindSessionsVC.instance()else{
-            return
-        }
-        self.present(controller, animated:true)
+        let mainContentVC = UIStoryboard(name: "AthleteDashboard", bundle: nil).instantiateViewController(withIdentifier: "FindSessionsVC")
+        
+        let drawerContentVC = UIStoryboard(name: "AthleteDashboard", bundle: nil).instantiateViewController(withIdentifier: "DrawerContentViewController")
+        
+        let pulleyController = PulleyViewController(contentViewController: mainContentVC, drawerViewController: drawerContentVC)
+        
+        self.present(pulleyController, animated: true, completion: nil)
+    }
+    
+    @IBAction func findEventActionBtn(_ sender: Any) {
+        let mainContentVC = UIStoryboard(name: "AthleteDashboard", bundle: nil).instantiateViewController(withIdentifier: "FindSessionsVC")
+        
+        let drawerContentVC = UIStoryboard(name: "AthleteDashboard", bundle: nil).instantiateViewController(withIdentifier: "DrawerContentViewController")
+        
+        let pulleyController = PulleyViewController(contentViewController: mainContentVC, drawerViewController: drawerContentVC)
+        
+        self.present(pulleyController, animated: true, completion: nil)
+        
+    }
+    
+    @IBAction func findSpaceActionBtn(_ sender: Any) {
+        let mainContentVC = UIStoryboard(name: "AthleteDashboard", bundle: nil).instantiateViewController(withIdentifier: "FindSessionsVC")
+        
+        let drawerContentVC = UIStoryboard(name: "AthleteDashboard", bundle: nil).instantiateViewController(withIdentifier: "DrawerContentViewController")
+        
+        let pulleyController = PulleyViewController(contentViewController: mainContentVC, drawerViewController: drawerContentVC)
+        
+        self.present(pulleyController, animated: true, completion: nil)
     }
     
     @IBAction func viewAllCoachesAction(_ sender: Any) {
@@ -107,7 +171,7 @@ class AthleteDashboardVC: UIViewController {
     
     
     @IBAction func viewAllOrgAction(_ sender: Any) {
-        guard let controller = ViewAllCoachesVC.instance() else{
+        guard let controller = ViewAllOrganisationVC.instance() else{
             return
         }
         self.present(controller, animated: true)
@@ -120,10 +184,10 @@ extension AthleteDashboardVC: UICollectionViewDelegate, UICollectionViewDataSour
    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         if collectionView == coachCollectView{
-            return coachArr.count
+            return dataSource.count
         }
         if collectionView == orgCollectView{
-            return orgArr.count
+            return orgDatasource.count
         }
         return 5
     }
@@ -134,9 +198,11 @@ extension AthleteDashboardVC: UICollectionViewDelegate, UICollectionViewDataSour
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CoachCell", for: indexPath) as? CoachCollectVCell  else{
             return UICollectionViewCell()
         }
-            cell.coachLbl?.text = coachArr[indexPath.row]
-            cell.coachesImgContainerView?.rounded()
-            cell.coachImgView?.image = UIImage(named: imgArr[indexPath.row])
+            let imagePath = dataSource[indexPath.row].profile_image ?? ""
+            let url = URL(string: API_ENDPOINTS.COACH_IMAGE_BASE_URL.rawValue + imagePath)
+            cell.coachImgView?.sd_setImage(with: url)
+            cell.coachLbl?.text = dataSource[indexPath.row].name
+
             return cell
             
     }
@@ -144,14 +210,17 @@ extension AthleteDashboardVC: UICollectionViewDelegate, UICollectionViewDataSour
             guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "OrgCell", for: indexPath) as? OrgCollectionVCell else{
                 return UICollectionViewCell()
             }
-            cell.orgLabel?.text = orgArr[indexPath.row]
-            cell.orgImgContainerView?.rounded()
-            cell.orgImgView?.image = UIImage(named: imgArr[indexPath.row])
+            let imagePath = orgDatasource[indexPath.row].profile_image ?? ""
+            let url = URL(string: API_ENDPOINTS.ORG_IMAGE_BASE_URL.rawValue + imagePath)
+            cell.orgImgView?.sd_setImage(with: url)
+            cell.orgLabel?.text = orgDatasource[indexPath.row].name
+            
             return cell
         }
         return UICollectionViewCell()
     
     }
+    
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         

@@ -9,6 +9,12 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
+        <array key="Poppins-Bold.ttf">
+            <string>Poppins-Bold</string>
+        </array>
+        <array key="Poppins-Medium.ttf">
+            <string>Poppins-Medium</string>
+        </array>
         <array key="Proxima Nova Alt Bold.otf">
             <string>ProximaNovaA-Bold</string>
         </array>
@@ -29,17 +35,17 @@
                                 <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yNb-Zy-8aH" userLabel="ParentContent view">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="765"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="813"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back_login" translatesAutoresizingMaskIntoConstraints="NO" id="8Qr-Zi-dIo">
-                                                <rect key="frame" x="0.0" y="0.0" width="320" height="765"/>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Repeat Grid 1" translatesAutoresizingMaskIntoConstraints="NO" id="8Qr-Zi-dIo">
+                                                <rect key="frame" x="0.0" y="0.0" width="320" height="813"/>
                                             </imageView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D8R-2X-vC0">
-                                                <rect key="frame" x="40" y="25" width="240" height="40"/>
+                                                <rect key="frame" x="40" y="50" width="240" height="40"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Who are you?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QHz-gO-wRe">
                                                         <rect key="frame" x="0.0" y="0.0" width="240" height="40"/>
-                                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="30"/>
+                                                        <fontDescription key="fontDescription" name="Poppins-Bold" family="Poppins" pointSize="30"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -55,7 +61,7 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vFL-lf-itn" userLabel="Container view">
-                                                <rect key="frame" x="50" y="117" width="220" height="300"/>
+                                                <rect key="frame" x="50" y="170" width="220" height="300"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k8Q-hB-0ul" userLabel="Athlete view">
                                                         <rect key="frame" x="23" y="30" width="174" height="60"/>
@@ -71,9 +77,8 @@
                                                                 </constraints>
                                                             </imageView>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Athlete" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fmB-pv-2HS">
-                                                                <rect key="frame" x="71" y="21" width="49" height="18"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                                <color key="textColor" red="0.4817708" green="0.4979242304" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <rect key="frame" x="71" y="17.5" width="65" height="25.5"/>
+                                                                <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="18"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wqf-0L-QV7" customClass="ZFRippleButton" customModule="ZFRippleButton">
@@ -127,8 +132,8 @@
                                                                 </constraints>
                                                             </imageView>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Coach" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HYj-J0-Swc">
-                                                                <rect key="frame" x="70" y="21" width="44.5" height="18"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                                <rect key="frame" x="70" y="17.5" width="60.5" height="25.5"/>
+                                                                <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="18"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
@@ -179,8 +184,8 @@
                                                                 </constraints>
                                                             </imageView>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Organization" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Qw-9h-4yb">
-                                                                <rect key="frame" x="70" y="21" width="87.5" height="18"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                                <rect key="frame" x="70" y="17.5" width="117.5" height="25.5"/>
+                                                                <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="18"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
@@ -234,16 +239,15 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pl3-GM-mXv" userLabel="loginBtn view">
-                                                <rect key="frame" x="50" y="452" width="220" height="35"/>
+                                                <rect key="frame" x="50" y="490" width="220" height="45"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Log in / Sign Up Athlete" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uf4-1T-cU7">
-                                                        <rect key="frame" x="0.0" y="0.0" width="220" height="35"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                        <nil key="textColor"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="220" height="45"/>
+                                                        <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="16"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dmt-1V-2i0">
-                                                        <rect key="frame" x="0.0" y="0.0" width="220" height="35"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="220" height="45"/>
                                                         <connections>
                                                             <action selector="loginActionBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bal-ln-uMh"/>
                                                         </connections>
@@ -255,7 +259,7 @@
                                                     <constraint firstItem="uf4-1T-cU7" firstAttribute="top" secondItem="pl3-GM-mXv" secondAttribute="top" id="Jsb-KZ-qgv"/>
                                                     <constraint firstItem="dmt-1V-2i0" firstAttribute="leading" secondItem="pl3-GM-mXv" secondAttribute="leading" id="X5J-L9-aUV"/>
                                                     <constraint firstAttribute="bottom" secondItem="uf4-1T-cU7" secondAttribute="bottom" id="cMR-Th-W5J"/>
-                                                    <constraint firstAttribute="height" constant="35" id="fqf-eh-v32"/>
+                                                    <constraint firstAttribute="height" constant="45" id="fqf-eh-v32"/>
                                                     <constraint firstItem="dmt-1V-2i0" firstAttribute="top" secondItem="pl3-GM-mXv" secondAttribute="top" id="mCu-Tz-4d4"/>
                                                     <constraint firstAttribute="bottom" secondItem="dmt-1V-2i0" secondAttribute="bottom" id="sO5-ed-taq"/>
                                                     <constraint firstAttribute="trailing" secondItem="dmt-1V-2i0" secondAttribute="trailing" id="ttm-bN-r5Z"/>
@@ -267,7 +271,7 @@
                                         <constraints>
                                             <constraint firstAttribute="bottom" secondItem="8Qr-Zi-dIo" secondAttribute="bottom" id="1CB-X5-XPR"/>
                                             <constraint firstAttribute="bottom" secondItem="pl3-GM-mXv" secondAttribute="bottom" constant="278" id="1DH-I4-3Dq"/>
-                                            <constraint firstItem="pl3-GM-mXv" firstAttribute="top" secondItem="vFL-lf-itn" secondAttribute="bottom" constant="35" id="2K4-tc-oCh"/>
+                                            <constraint firstItem="pl3-GM-mXv" firstAttribute="top" secondItem="vFL-lf-itn" secondAttribute="bottom" constant="20" id="2K4-tc-oCh"/>
                                             <constraint firstItem="pl3-GM-mXv" firstAttribute="trailing" secondItem="vFL-lf-itn" secondAttribute="trailing" id="3QW-Uw-nHV"/>
                                             <constraint firstItem="vFL-lf-itn" firstAttribute="leading" secondItem="yNb-Zy-8aH" secondAttribute="leading" constant="50" id="9C4-jH-Vef"/>
                                             <constraint firstAttribute="trailing" secondItem="vFL-lf-itn" secondAttribute="trailing" constant="50" id="Bni-wy-ED5"/>
@@ -275,10 +279,10 @@
                                             <constraint firstItem="pl3-GM-mXv" firstAttribute="centerX" secondItem="yNb-Zy-8aH" secondAttribute="centerX" id="PgQ-5d-1MW"/>
                                             <constraint firstAttribute="trailing" secondItem="8Qr-Zi-dIo" secondAttribute="trailing" id="S5e-6L-kSh"/>
                                             <constraint firstItem="8Qr-Zi-dIo" firstAttribute="top" secondItem="yNb-Zy-8aH" secondAttribute="top" id="S9m-A3-yMR"/>
-                                            <constraint firstItem="D8R-2X-vC0" firstAttribute="top" secondItem="yNb-Zy-8aH" secondAttribute="top" constant="25" id="Swo-X8-ukt"/>
+                                            <constraint firstItem="D8R-2X-vC0" firstAttribute="top" secondItem="yNb-Zy-8aH" secondAttribute="top" constant="50" id="Swo-X8-ukt"/>
                                             <constraint firstItem="8Qr-Zi-dIo" firstAttribute="leading" secondItem="yNb-Zy-8aH" secondAttribute="leading" id="Un3-LV-PK0"/>
                                             <constraint firstItem="pl3-GM-mXv" firstAttribute="leading" secondItem="vFL-lf-itn" secondAttribute="leading" id="V3d-ye-Jno"/>
-                                            <constraint firstItem="vFL-lf-itn" firstAttribute="top" secondItem="D8R-2X-vC0" secondAttribute="bottom" constant="52" id="ieB-KG-Sra"/>
+                                            <constraint firstItem="vFL-lf-itn" firstAttribute="top" secondItem="D8R-2X-vC0" secondAttribute="bottom" constant="80" id="ieB-KG-Sra"/>
                                             <constraint firstItem="vFL-lf-itn" firstAttribute="centerX" secondItem="yNb-Zy-8aH" secondAttribute="centerX" id="z9v-zV-gWa"/>
                                         </constraints>
                                     </view>
@@ -323,7 +327,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="828.75" y="-269.36619718309862"/>
+            <point key="canvasLocation" x="578" y="-355"/>
         </scene>
         <!--Summary Of ServiceVC-->
         <scene sceneID="Kyl-KZ-oKu">
@@ -521,7 +525,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NjX-fU-0eM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2524" y="-357"/>
+            <point key="canvasLocation" x="2775" y="-319"/>
         </scene>
         <!--Select ServiceVC-->
         <scene sceneID="Hj7-pQ-Jb5">
@@ -743,7 +747,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5JN-73-GJM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3408.75" y="-349.64788732394368"/>
+            <point key="canvasLocation" x="3510" y="-319"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="3C6-Nc-yG9">
@@ -1362,7 +1366,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OBx-kr-Cgp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5040" y="-260.91549295774649"/>
+            <point key="canvasLocation" x="4841" y="-319"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="lQT-rX-lh5">
@@ -1383,9 +1387,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Repeat Grid 1" width="375" height="812"/>
         <image name="add_button" width="23" height="23"/>
         <image name="back_button" width="14" height="24.5"/>
-        <image name="back_login" width="375" height="813"/>
         <image name="box_unchecked" width="26" height="26"/>
         <image name="buttonBorder_view" width="113" height="113"/>
         <image name="greenShadow" width="78" height="78"/>

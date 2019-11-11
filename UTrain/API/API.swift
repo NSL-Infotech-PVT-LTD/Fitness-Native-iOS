@@ -65,7 +65,7 @@ class API: NSObject{
     func loginUser(url: String, params : [String : Any], viewController : UIViewController, completion: @escaping (AthleteLoginModel) -> Void){
         
         ConnectionHandler.jsonPOSTRequest(url: url, parameters: params) { (result:Any) in
-              self.delegate?.callBackFromAPI()
+        self.delegate?.callBackFromAPI()
             
             if ((result as? [String : Any]) != nil) {
                 
@@ -92,6 +92,7 @@ class API: NSObject{
                         print("Failed to Serialize the json data due to \(err)")
                     }
                 }
+                    
                 else{
                     let error = response["error"] as? [String:Any] ?? [:]
                     let errorMessage = error["error_message"] as? [String:Any] ?? [:]
@@ -183,5 +184,214 @@ class API: NSObject{
             }
         }
     }
+    
+    func getCoachesList(url: String,params: [String:Any], viewController: UIViewController, completion: @escaping ([AthleteCoachListModel]) -> Void){
+        
+        ConnectionHandler.jsonPOSTRequest(url: url, parameters: params) { (result:Any) in
+            self.delegate?.callBackFromAPI()
+        
+        
+        if ((result as? [String : Any]) != nil) {
+            
+            let response = result as! [String : Any]
+            print("the responseeeeeee\(response)")
+            
+            if (response["status"] as? Int ?? 0) == 1
+            {
+                let data = response["data"] as? [String:Any] ?? [:]
+                let mainData = data["data"] as? [[String:Any]] ?? [[:]]
+                
+                do{
+                    
+                    let dataObject = try JSONSerialization.data(withJSONObject: mainData, options: .prettyPrinted)
+                    
+                    let coachListModel = try JSONDecoder().decode([AthleteCoachListModel].self, from: dataObject)
+                    completion(coachListModel)
+                    
+                }catch let err{
+                    print("Failed to Serialize the json data due to \(err)")
+                }
+            }
+            else{
+                
+                viewController.alertWindow(message: "Empty Data")
+            }
+        }
+            
+        else {
+            viewController.alertWindow(message: " Server Error ")
+            
+        }
+            
+    }
+    
+    
+}
+
+    func getOrganisationList(url: String,params: [String:Any], viewController: UIViewController, completion: @escaping ([OrganisationListModel]) -> Void){
+        
+        ConnectionHandler.jsonPOSTRequest(url: url, parameters: params) { (result:Any) in
+            self.delegate?.callBackFromAPI()
+            
+            if ((result as? [String : Any]) != nil) {
+                
+                let response = result as! [String : Any]
+                print("the responseeeeeee\(response)")
+                
+                if (response["status"] as? Int ?? 0) == 1
+                {
+                    let data = response["data"] as? [String:Any] ?? [:]
+                    let mainData = data["data"] as? [[String:Any]] ?? [[:]]
+                    
+                    do{
+                        
+                        let dataObject = try JSONSerialization.data(withJSONObject: mainData, options: .prettyPrinted)
+                        
+                        let orgListModel = try JSONDecoder().decode([OrganisationListModel].self, from: dataObject)
+                        completion(orgListModel)
+                        
+                    }catch let err{
+                        print("Failed to Serialize the json data due to \(err)")
+                    }
+                }
+                else{
+                    
+                    viewController.alertWindow(message: "Empty Data")
+                }
+            }
+                
+            else {
+                viewController.alertWindow(message: " Server Error ")
+                
+            }
+        }
+        
+        
+    }
+    
+    func getEventListForAthlete(url: String,params: [String:Any], viewController: UIViewController, completion: @escaping ([AthleteEventListModel]) -> Void){
+        
+        ConnectionHandler.jsonPOSTRequest(url: url, parameters: params) { (result:Any) in
+            self.delegate?.callBackFromAPI()
+            
+            if ((result as? [String : Any]) != nil) {
+                
+                let response = result as! [String : Any]
+                print("the responseeeeeee EVENT LIST\(response)")
+                
+                if (response["status"] as? Int ?? 0) == 1
+                {
+                    let data = response["data"] as? [String:Any] ?? [:]
+                    let mainData = data["data"] as? [[String:Any]] ?? [[:]]
+                    
+                    do{
+                        
+                        let dataObject = try JSONSerialization.data(withJSONObject: mainData, options: .prettyPrinted)
+                        
+                        let eventListModel = try JSONDecoder().decode([AthleteEventListModel].self, from: dataObject)
+                        completion(eventListModel)
+                        
+                    }catch let err{
+                        print("Failed to Serialize the json data due to \(err)")
+                    }
+                }
+                else{
+                    
+                    viewController.alertWindow(message: "Empty Data")
+                }
+            }
+                
+            else {
+                viewController.alertWindow(message: " Server Error ")
+            }
+        }
+        
+        
+    }
+    
+    func getSpaceListForAthlete(url: String,params: [String:Any], viewController: UIViewController, completion: @escaping ([AthleteSpaceListModel]) -> Void){
+        
+        ConnectionHandler.jsonPOSTRequest(url: url, parameters: params) { (result:Any) in
+            self.delegate?.callBackFromAPI()
+            
+            if ((result as? [String : Any]) != nil) {
+                
+                let response = result as! [String : Any]
+                print("the responseeeeeee Space LIST\(response)")
+                
+                if (response["status"] as? Int ?? 0) == 1
+                {
+                    let data = response["data"] as? [String:Any] ?? [:]
+                    let mainData = data["data"] as? [[String:Any]] ?? [[:]]
+                    
+                    do{
+                        
+                        let dataObject = try JSONSerialization.data(withJSONObject: mainData, options: .prettyPrinted)
+                        
+                        let spaceListModel = try JSONDecoder().decode([AthleteSpaceListModel].self, from: dataObject)
+                        completion(spaceListModel)
+                        
+                    }catch let err{
+                        print("Failed to Serialize the json data due to \(err)")
+                    }
+                }
+                else{
+                    
+                    viewController.alertWindow(message: "Empty Data")
+                }
+            }
+                
+            else {
+                viewController.alertWindow(message: " Server Error ")
+                
+            }
+        }
+        
+        
+    }
+    
+    func getSessionsListForAthlete(url: String,params: [String:Any], viewController: UIViewController, completion: @escaping ([AthleteSessionListModel]) -> Void){
+        
+        ConnectionHandler.jsonPOSTRequest(url: url, parameters: params) { (result:Any) in
+            self.delegate?.callBackFromAPI()
+            
+            if ((result as? [String : Any]) != nil) {
+                
+                let response = result as! [String : Any]
+                print("the responseeeeeee Space LIST\(response)")
+                
+                if (response["status"] as? Int ?? 0) == 1
+                {
+                    let data = response["data"] as? [String:Any] ?? [:]
+                    let mainData = data["data"] as? [[String:Any]] ?? [[:]]
+                    
+                    do{
+                        
+                        let dataObject = try JSONSerialization.data(withJSONObject: mainData, options: .prettyPrinted)
+                        
+                        let sessionListModel = try JSONDecoder().decode([AthleteSessionListModel].self, from: dataObject)
+                        completion(sessionListModel)
+                        
+                    }catch let err{
+                        print("Failed to Serialize the json data due to \(err)")
+                    }
+                }
+                else{
+                    
+                    viewController.alertWindow(message: "Empty Data")
+                }
+            }
+                
+            else {
+                viewController.alertWindow(message: "Server Error ")
+                
+            }
+        }
+        
+        
+    }
+    
+    
+
     
 }

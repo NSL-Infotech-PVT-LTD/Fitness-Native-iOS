@@ -54,7 +54,7 @@
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Log in with Email" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N76-D4-AUp">
                                                         <rect key="frame" x="0.0" y="0.0" width="300" height="49"/>
-                                                        <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="14"/>
+                                                        <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="16"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -91,7 +91,7 @@
                                                             </imageView>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Log in with Facebook" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="teg-2M-OGv">
                                                                 <rect key="frame" x="50" y="0.0" width="160" height="31.5"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                                <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="16"/>
                                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
@@ -305,7 +305,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Log In" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dDM-bx-sFB">
-                                                <rect key="frame" x="30" y="82" width="115" height="48"/>
+                                                <rect key="frame" x="30" y="82" width="120.5" height="57.5"/>
                                                 <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="41"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -355,7 +355,7 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vpL-O2-2pa">
                                                         <rect key="frame" x="246" y="0.0" width="35" height="48.5"/>
                                                         <subviews>
-                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="eyehide" translatesAutoresizingMaskIntoConstraints="NO" id="q6e-jU-dBl">
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="closedEye" translatesAutoresizingMaskIntoConstraints="NO" id="q6e-jU-dBl">
                                                                 <rect key="frame" x="0.0" y="0.0" width="35" height="48.5"/>
                                                             </imageView>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I5L-LE-sn5">
@@ -455,13 +455,13 @@
                                                 <rect key="frame" x="87.5" y="538" width="200" height="31"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don't have an account?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dpA-8u-oq0" userLabel="dont have Label">
-                                                        <rect key="frame" x="0.0" y="0.0" width="149.5" height="31"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="167" height="31"/>
                                                         <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="14"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iAg-gy-eQw" userLabel="SignupBtn View">
-                                                        <rect key="frame" x="151.5" y="0.0" width="54" height="31"/>
+                                                        <rect key="frame" x="169" y="0.0" width="54" height="31"/>
                                                         <subviews>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C8u-Z3-kAJ" userLabel="underline">
                                                                 <rect key="frame" x="0.0" y="30" width="54" height="1"/>
@@ -923,7 +923,7 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XHl-T1-Cox">
                                                         <rect key="frame" x="246" y="0.0" width="35" height="40"/>
                                                         <subviews>
-                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gps" translatesAutoresizingMaskIntoConstraints="NO" id="PeQ-Uk-cdG">
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gps" translatesAutoresizingMaskIntoConstraints="NO" id="PeQ-Uk-cdG">
                                                                 <rect key="frame" x="0.0" y="0.0" width="35" height="40"/>
                                                             </imageView>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rHF-sx-sau">
@@ -979,7 +979,7 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EjQ-EK-r5Z">
                                                         <rect key="frame" x="246" y="0.0" width="35" height="40"/>
                                                         <subviews>
-                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="eyehide" translatesAutoresizingMaskIntoConstraints="NO" id="Ozm-L5-8gs">
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="closedEye" translatesAutoresizingMaskIntoConstraints="NO" id="Ozm-L5-8gs">
                                                                 <rect key="frame" x="0.0" y="0.0" width="35" height="40"/>
                                                             </imageView>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XOb-8G-Fgy">
@@ -1303,9 +1303,9 @@
         <image name="Image 13" width="128" height="128"/>
         <image name="Repeat Grid 1" width="375" height="812"/>
         <image name="back_white" width="60" height="96"/>
+        <image name="closedEye" width="19" height="19"/>
         <image name="email" width="24" height="17"/>
-        <image name="eyehide" width="120" height="93"/>
-        <image name="gps" width="512" height="512"/>
+        <image name="gps" width="19" height="19"/>
         <image name="lock" width="16" height="22"/>
         <image name="phone" width="19" height="19"/>
         <image name="user" width="18" height="18"/>

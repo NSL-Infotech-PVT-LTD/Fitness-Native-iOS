@@ -31,6 +31,10 @@ PODS:
   - GooglePlaces (3.1.0):
     - GoogleMaps/Base (= 3.1.0)
   - IQKeyboardManager (6.4.0)
+  - Pulley (2.7.0)
+  - SDWebImage (5.1.0):
+    - SDWebImage/Core (= 5.1.0)
+  - SDWebImage/Core (5.1.0)
   - SideMenuSwift (2.0.2)
   - SVProgressHUD (2.2.5)
   - ZFRippleButton (0.6)
@@ -44,6 +48,8 @@ DEPENDENCIES:
   - GooglePlacePicker
   - GooglePlaces
   - IQKeyboardManager
+  - Pulley
+  - SDWebImage
   - SideMenuSwift
   - SVProgressHUD
   - ZFRippleButton
@@ -61,6 +67,8 @@ SPEC REPOS:
     - GooglePlacePicker
     - GooglePlaces
     - IQKeyboardManager
+    - Pulley
+    - SDWebImage
     - SideMenuSwift
     - SVProgressHUD
     - ZFRippleButton
@@ -77,10 +85,12 @@ SPEC CHECKSUMS:
   GooglePlacePicker: 1c60c2a26e9d1e73bcb0c6f89609db8d777d13c1
   GooglePlaces: e874db179f2675c4f3eeda0b686b540273a578b0
   IQKeyboardManager: fcef267266379c003181fc3592f6bdb8bf4db839
+  Pulley: 028ddcc7d2dcbc078d71b61b7eee8e786d72c14a
+  SDWebImage: fb387001955223213dde14bc08c8b73f371f8d8f
   SideMenuSwift: ba10587929b9090c89105ec52739e6c60b9e50de
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   ZFRippleButton: 62ea35e209757704dea697d66489fe69c13d7b77
 
-PODFILE CHECKSUM: cee926a8a3a50be85fb6b2db61b34e0648fc56cb
+PODFILE CHECKSUM: 1884299329bff524b6a6cab976de68d737022c47
 
 COCOAPODS: 1.7.5

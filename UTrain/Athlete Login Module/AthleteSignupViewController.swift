@@ -348,6 +348,7 @@ extension AthleteSignupViewController: CLLocationManagerDelegate, GMSMapViewDele
                     if pm.thoroughfare != nil {
                         addressString = addressString + pm.thoroughfare! + ", "
                     }
+                    
                     if pm.locality != nil {
                         addressString = addressString + pm.locality! + ", "
                     }

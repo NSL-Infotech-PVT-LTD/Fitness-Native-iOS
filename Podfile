@@ -18,6 +18,9 @@ target 'UTrain' do
    pod 'GoogleMaps'
    pod 'GooglePlaces'
    pod 'GooglePlacePicker'
+   pod 'Pulley'
+   pod 'SDWebImage'
+
 
 
    

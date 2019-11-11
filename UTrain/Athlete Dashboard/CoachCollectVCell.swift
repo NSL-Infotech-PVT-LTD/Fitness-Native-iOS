@@ -9,6 +9,7 @@
 import UIKit
 
 class CoachCollectVCell: UICollectionViewCell {
+    
     @IBOutlet weak var coachImgView: UIImageView?
     @IBOutlet weak var coachLbl: UILabel?
     @IBOutlet weak var coachesImgContainerView: UIView?

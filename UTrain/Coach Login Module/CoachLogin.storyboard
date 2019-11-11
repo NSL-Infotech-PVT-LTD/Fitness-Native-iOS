@@ -333,7 +333,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3fD-5U-LHe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="390" y="-140"/>
+            <point key="canvasLocation" x="412" y="-334"/>
         </scene>
         <!--Coach Signup View Controller-->
         <scene sceneID="HYQ-Do-yRO">

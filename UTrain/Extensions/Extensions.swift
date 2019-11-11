@@ -14,7 +14,7 @@ import CoreLocation
 let api = API()
 
 extension UIView{
-    func rounded(){
+    func rounded(radius: CGFloat = 9){
         //self.clipsToBounds = true
         self.layer.cornerRadius = 25
         //self.layer.maskedCorners = [.layerMinXMinYCorner,.layerMaxXMinYCorner]

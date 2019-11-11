@@ -16,6 +16,7 @@ class ViewController: UIViewController {
         case coach   = 1
         case organisation = 2
     }
+    
     //MARK:- Outlets and Variables
     var currentTraining = trainingType.athlete
     var isHighlight = false
@@ -41,7 +42,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var orgImage: UIImageView?
     @IBOutlet weak var orgInnerImage: UIImageView?
     @IBOutlet weak var orgLabel: UILabel?
-    
+    let customFont = UIFont(name: "Poppins-Medium.ttf", size: 17)
     
     var athleteVC : AthleteLoginViewController? = AthleteLoginViewController.instance()
     
@@ -98,7 +99,6 @@ class ViewController: UIViewController {
         athleteView?.layer.shadowRadius = 10
         athleteView?.layer.borderColor = UIColor.green.cgColor
         athleteView?.layer.borderWidth = 1.5
-
         
         coachView?.layer.cornerRadius = 10
         coachView?.clipsToBounds = true
@@ -142,9 +142,10 @@ class ViewController: UIViewController {
         athleteImage?.isHidden = false
         athleteInnerImage?.image = UIImage(named: "Athlete_white")
         athleteLabel?.textColor = UIColor.white
-        athleteLabel?.font = UIFont.boldSystemFont(ofSize: 16.0)
+        athleteLabel?.font = customFont
 
         loginSignLabel?.text = "Log in/ Signup Athlete"
+        loginSignLabel?.font = customFont
         currentTraining = .athlete
     
     }

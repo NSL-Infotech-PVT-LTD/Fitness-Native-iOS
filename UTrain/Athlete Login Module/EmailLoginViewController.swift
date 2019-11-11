@@ -68,12 +68,22 @@ class EmailLoginViewController: UIViewController {
         showIndicator()
         api.loginUser(url: API_ENDPOINTS.LOGIN.rawValue, params: params, viewController: self) { (model) in
             if model != nil{
-                //print("kokokokokokokokokokokokokokokoko")
-                //       @objc func instance()->SideMenuController?{
-                //        let storyboard = UIStoryboard(name: "AthleteDashboard", bundle: nil)
-                //        let controller = storyboard.instantiateViewController(withIdentifier: "SideMenuController") as? SideMenuController
-                //        return controller
-                //    }
+//                UserDefaults.standard.set(params, forKey: "token")
+//                if (UserDefaults.standard.value(forKey: "userData") as? [String:Any]) == nil{
+//                    let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+//                    let loginViewController = storyBoard.instantiateViewController(withIdentifier: "ViewController") as! ViewController
+//                    let navigationController = UINavigationController(rootViewController: loginViewController)
+//                    let appdelegate = UIApplication.shared.delegate as! AppDelegate
+//                    appdelegate.window!.rootViewController = navigationController
+//                }else{
+//                    let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+//                    let nextViewController = storyBoard.instantiateViewController(withIdentifier: "SideMenuController") as! SideMenuController
+//                    let navigationController = UINavigationController(rootViewController: nextViewController)
+//                    let appdelegate = UIApplication.shared.delegate as! AppDelegate
+//                    appdelegate.window!.rootViewController = navigationController
+//                }
+               
+//
                 let storyboard = UIStoryboard(name: "AthleteDashboard", bundle: nil)
                let controller = storyboard.instantiateViewController(withIdentifier: "SideMenuController") as? SideMenuController
                 self.navigationController?.pushViewController(controller!, animated: true)

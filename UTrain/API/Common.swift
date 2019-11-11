@@ -12,8 +12,8 @@ class Common{
     
     static func getTokenURLHeader() -> [String:String]{
         return
-            ["Content-Type":  "application/x-www-form-urlencoded"]
-           // "Authorization": "Bearer ".appending(UserDefaults.standard.value(forKey: "token") as? String ?? "")
+            ["Content-Type":  "application/x-www-form-urlencoded",
+            "Authorization": "Bearer ".appending(UserDefaults.standard.value(forKey: "token") as? String ?? "")]
     }
     
 }

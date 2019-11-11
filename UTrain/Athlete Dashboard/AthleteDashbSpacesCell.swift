@@ -13,6 +13,11 @@ class AthleteDashbSpacesCell: UITableViewCell {
     @IBOutlet weak var spacesImgContainer: UIView?
     @IBOutlet weak var spacesImgView: UIImageView?
     
+    @IBOutlet weak var nameLbl: UILabel?
+
+    @IBOutlet weak var locationLbl: UILabel?
+    @IBOutlet weak var distanceLbl: UILabel?
+    
     override func awakeFromNib() {
         super.awakeFromNib()
     }

@@ -10,17 +10,40 @@ import UIKit
 import GoogleMaps
 
 class FindSessionsVC: UIViewController {
-    @IBOutlet weak var mapView: GMSMapView!
     
+    //MARK:- Outlets and Variables
+    @IBOutlet weak var mapView: GMSMapView!
+    var location = CLLocationCoordinate2D()
+    
+    //MARK:- View Life-cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-
+      camera()
     }
+    
     class func instance()-> FindSessionsVC?{
         let storyboard = UIStoryboard(name: "AthleteDashboard", bundle: nil)
         let controller = storyboard.instantiateViewController(withIdentifier: "FindSessionsVC") as? FindSessionsVC
         return controller
     }
-
+    
+    func camera(){
+        let camera = GMSCameraPosition.camera(withLatitude: location.latitude, longitude: location.longitude, zoom: 6.0)
+        mapView.camera = camera
+        self.showMarker(position: mapView.camera.target)
+    }
+    
+    func showMarker(position: CLLocationCoordinate2D){
+        let marker = GMSMarker()
+        marker.position = position
+        marker.title = ""
+        marker.map = mapView
+        
+    }
+    
+    @IBAction func backActionBtn(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
 
 }
