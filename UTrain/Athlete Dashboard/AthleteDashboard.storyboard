@@ -1336,7 +1336,7 @@
                                 <rect key="frame" x="5" y="10" width="55" height="45"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back_button" translatesAutoresizingMaskIntoConstraints="NO" id="oPl-AB-TeZ">
-                                        <rect key="frame" x="0.0" y="0.0" width="55" height="45.000000000000007"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="55" height="45"/>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zkt-J9-CNe">
                                         <rect key="frame" x="0.0" y="0.0" width="55" height="45"/>
@@ -1887,7 +1887,7 @@
                                                 <rect key="frame" x="15" y="5" width="40" height="35"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back_button" translatesAutoresizingMaskIntoConstraints="NO" id="NSR-JA-i1R">
-                                                        <rect key="frame" x="0.0" y="0.0" width="40" height="35.000000000000007"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="40" height="35"/>
                                                     </imageView>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5kP-Gw-H9c">
                                                         <rect key="frame" x="0.0" y="0.0" width="40" height="35"/>
@@ -3379,7 +3379,7 @@
                                 <rect key="frame" x="5" y="30" width="55" height="45"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back_button" translatesAutoresizingMaskIntoConstraints="NO" id="4jW-gl-9cB">
-                                        <rect key="frame" x="0.0" y="0.0" width="55" height="45.000000000000007"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="55" height="45"/>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cVq-7o-mpP">
                                         <rect key="frame" x="0.0" y="0.0" width="55" height="45"/>
@@ -3442,7 +3442,7 @@
                                 <rect key="frame" x="5" y="30" width="55" height="45"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back_button" translatesAutoresizingMaskIntoConstraints="NO" id="ENR-6S-lKi">
-                                        <rect key="frame" x="0.0" y="0.0" width="55" height="45.000000000000007"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="55" height="45"/>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HgZ-s2-mug">
                                         <rect key="frame" x="0.0" y="0.0" width="55" height="45"/>
@@ -3762,7 +3762,7 @@
                                                 <rect key="frame" x="15" y="5" width="40" height="35"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back_button" translatesAutoresizingMaskIntoConstraints="NO" id="MI2-bn-ugz">
-                                                        <rect key="frame" x="0.0" y="0.0" width="40" height="35.000000000000007"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="40" height="35"/>
                                                     </imageView>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Gv-08-Qbx">
                                                         <rect key="frame" x="0.0" y="0.0" width="40" height="35"/>
