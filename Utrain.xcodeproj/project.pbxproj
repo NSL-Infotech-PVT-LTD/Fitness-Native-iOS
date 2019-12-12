@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D00658C23A24B1000D1A81F /* SpacesImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D00658B23A24B1000D1A81F /* SpacesImageCell.swift */; };
 		0D0D38D223A113F70014C2C0 /* FindSessionsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0D38D123A113F70014C2C0 /* FindSessionsVC.swift */; };
 		0D0D38D523A114160014C2C0 /* DrawerContentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0D38D423A114160014C2C0 /* DrawerContentVC.swift */; };
 		0D378DEE239FB5A100094F5A /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D378DED239FB5A100094F5A /* LoginVC.swift */; };
@@ -66,6 +67,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0D00658B23A24B1000D1A81F /* SpacesImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpacesImageCell.swift; sourceTree = "<group>"; };
 		0D0D38D123A113F70014C2C0 /* FindSessionsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindSessionsVC.swift; sourceTree = "<group>"; };
 		0D0D38D423A114160014C2C0 /* DrawerContentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawerContentVC.swift; sourceTree = "<group>"; };
 		0D378DED239FB5A100094F5A /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
@@ -239,6 +241,7 @@
 			isa = PBXGroup;
 			children = (
 				0D378E02239FB79D00094F5A /* SpacesVC.swift */,
+				0D00658B23A24B1000D1A81F /* SpacesImageCell.swift */,
 			);
 			path = SpacesVC;
 			sourceTree = "<group>";
@@ -614,6 +617,7 @@
 				0D378E03239FB79D00094F5A /* SpacesVC.swift in Sources */,
 				0DB9DD96239E51E4003D45E9 /* AppDelegate.swift in Sources */,
 				0D378DEE239FB5A100094F5A /* LoginVC.swift in Sources */,
+				0D00658C23A24B1000D1A81F /* SpacesImageCell.swift in Sources */,
 				0D3EC28723A20993002BBE09 /* FindSessionModel.swift in Sources */,
 				0DEF2CDB23A0F113005E8794 /* DashboardServicesCell.swift in Sources */,
 				0D934E40239FCEF900F4AE23 /* SelectSportsCell.swift in Sources */,

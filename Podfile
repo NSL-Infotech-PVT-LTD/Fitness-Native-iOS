@@ -18,7 +18,8 @@ target 'Utrain' do
    pod 'GooglePlaces'
    pod 'GooglePlacePicker'
    pod 'Pulley'
-   pod 'SDWebImage' 
+   pod 'SDWebImage'
+   pod "SearchTextField"
   # Pods for Utrain
 
 end

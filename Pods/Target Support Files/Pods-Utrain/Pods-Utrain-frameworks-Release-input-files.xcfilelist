@@ -10,5 +10,6 @@ ${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework
 ${BUILT_PRODUCTS_DIR}/Pulley/Pulley.framework
 ${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework
 ${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework
+${BUILT_PRODUCTS_DIR}/SearchTextField/SearchTextField.framework
 ${BUILT_PRODUCTS_DIR}/SideMenuSwift/SideMenuSwift.framework
 ${BUILT_PRODUCTS_DIR}/ZFRippleButton/ZFRippleButton.framework

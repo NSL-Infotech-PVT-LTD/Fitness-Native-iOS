@@ -3,6 +3,8 @@
 
 import Foundation
 import UIKit
+import GooglePlacePicker
+import GoogleMaps
 
 // MARK: - UICOLOR EXTENSION
 extension UIColor {
@@ -370,4 +372,59 @@ extension Date {
         applyGradient()
         #endif
     }
+}
+
+extension GMSMarker {
+    func setIconSize(scaledToSize newSize: CGSize) {
+        UIGraphicsBeginImageContextWithOptions(newSize, false, 0.0)
+        icon?.draw(in: CGRect(x: 0, y: 0, width: newSize.width, height: newSize.height))
+        let newImage: UIImage = UIGraphicsGetImageFromCurrentImageContext()!
+        UIGraphicsEndImageContext()
+        icon = newImage
+    }
+}
+
+func openTrackerInBrowser(lat: String, long: String, dlat: String, dlong: String){
+    
+    if let urlDestination = URL.init(string: "https://www.google.co.in/maps/dir/?saddr=\(lat),\(long)&daddr=\(dlat),\(dlong)&directionsmode=driving") {
+        UIApplication.shared.open(urlDestination, options: [:], completionHandler: nil)
+        
+    }
+}
+
+func expDateValidation(dateStr:String) {
+    
+    let currentYear = Calendar.current.component(.year, from: Date()) % 100   // This will give you current year (i.e. if 2019 then it will be 19)
+    let currentMonth = Calendar.current.component(.month, from: Date()) // This will give you current month (i.e if June then it will be 6)
+    
+    let enterdYr = Int(dateStr.suffix(2)) ?? 0   // get last two digit from entered string as year
+    let enterdMonth = Int(dateStr.prefix(2)) ?? 0  // get first two digit from entered string as month
+    print(dateStr) // This is MM/YY Entered by user
+    
+    if enterdYr > currentYear
+    {
+        if (1 ... 12).contains(enterdMonth){
+            print("Entered Date Is Right")
+        } else
+        {
+            print("Entered Date Is Wrong")
+        }
+        
+    } else  if currentYear == enterdYr {
+        if enterdMonth >= currentMonth
+        {
+            if (1 ... 12).contains(enterdMonth) {
+                print("Entered Date Is Right")
+            }  else
+            {
+                print("Entered Date Is Wrong")
+            }
+        } else {
+            print("Entered Date Is Wrong")
+        }
+    } else
+    {
+        print("Entered Date Is Wrong")
+    }
+    
 }

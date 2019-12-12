@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import  Pulley
 
 class DashboardVC: UIViewController {
 
@@ -57,6 +58,14 @@ class DashboardVC: UIViewController {
     @IBAction func viewAllOnPress(_ sender: UIButton) {
     }
     
+    @IBAction func findSpaceOnPress(_ sender: UITapGestureRecognizer) {
+        let mainContentVC = UIStoryboard(name: "Coach", bundle: nil).instantiateViewController(withIdentifier: "FindSessionsVC")
+        
+        let drawerContentVC = UIStoryboard(name: "Coach", bundle: nil).instantiateViewController(withIdentifier: "DrawerContentVC")
+        
+        let pulleyController = PulleyViewController(contentViewController: mainContentVC, drawerViewController: drawerContentVC)
+        self.navigationController?.pushViewController(pulleyController,animated: true)
+    }
 }
 
 

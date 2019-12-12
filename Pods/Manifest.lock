@@ -39,6 +39,7 @@ PODS:
   - SDWebImage (5.3.2):
     - SDWebImage/Core (= 5.3.2)
   - SDWebImage/Core (5.3.2)
+  - SearchTextField (1.2.4)
   - SideMenuSwift (2.0.3)
   - SVProgressHUD (2.2.5)
   - ZFRippleButton (0.6)
@@ -54,6 +55,7 @@ DEPENDENCIES:
   - IQKeyboardManager
   - Pulley
   - SDWebImage
+  - SearchTextField
   - SideMenuSwift
   - SVProgressHUD
   - ZFRippleButton
@@ -73,6 +75,7 @@ SPEC REPOS:
     - IQKeyboardManager
     - Pulley
     - SDWebImage
+    - SearchTextField
     - SideMenuSwift
     - SVProgressHUD
     - ZFRippleButton
@@ -91,10 +94,11 @@ SPEC CHECKSUMS:
   IQKeyboardManager: 72b359cd7e777e3a984cedbe05f8da45320cbb63
   Pulley: 81301031e9b08c7b240fa47e8b5d76e00bb05530
   SDWebImage: 6ac2eb96571bff96ecde31a987172c5934a0eb7d
+  SearchTextField: 40dc3cc57def5a211f263cac263622c163bbc25a
   SideMenuSwift: 5c2b1496544ce3f1f08f4dddf4810eaac49f543d
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   ZFRippleButton: 62ea35e209757704dea697d66489fe69c13d7b77
 
-PODFILE CHECKSUM: 93a5ec44ba2ec072a6972883ca741caaee407b19
+PODFILE CHECKSUM: 935aa169b4e65d6673337735b5e970f10f14bcda
 
 COCOAPODS: 1.8.4

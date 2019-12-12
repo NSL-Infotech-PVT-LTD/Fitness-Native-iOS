@@ -23,16 +23,11 @@ class LoginVC: UIViewController {
     
 
     @IBAction func logInOnPress(_ sender: UIButton) {
-//        if let vc = ViewControllerHelper.getViewController(ofType: .DashboardVC) as? DashboardVC {
-//            self.navigationController?.pushViewController(vc, animated: true)
-//        }
-        let mainContentVC = UIStoryboard(name: "Coach", bundle: nil).instantiateViewController(withIdentifier: "FindSessionsVC")
-        
-        let drawerContentVC = UIStoryboard(name: "Coach", bundle: nil).instantiateViewController(withIdentifier: "DrawerContentVC")
-        
-        let pulleyController = PulleyViewController(contentViewController: mainContentVC, drawerViewController: drawerContentVC)
-        
-        self.present(pulleyController, animated: true, completion: nil)
+        if let vc = ViewControllerHelper.getViewController(ofType: .DashboardVC) as? DashboardVC {
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
+       
+//        self.present(pulleyController, animated: true, completion: nil)
     }
     
     @IBAction func forGotOnPress(_ sender: Any) {

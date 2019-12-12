@@ -11,6 +11,9 @@ struct ViewControllerIdentifiers {
     static let ServiceVC                                = "ServiceVC"
     static let DashboardVC                              = "DashboardVC"
     static let SelectServiceVC                          = "SelectServiceVC"
+    static let SpacesVC                                 = "SpacesVC"
+    static let BookingVC                                = "BookingVC"
+    static let CardPaymentVC                            = "CardPaymentVC"
     
 }
 
@@ -23,8 +26,9 @@ enum ViewControllerType {
     case ServiceVC
     case DashboardVC
     case SelectServiceVC
-    
-    
+    case SpacesVC
+    case BookingVC
+    case CardPaymentVC
 }
 
 class ViewControllerHelper: NSObject {
@@ -49,6 +53,12 @@ class ViewControllerHelper: NSObject {
             viewController = storyboard.instantiateViewController(withIdentifier: ViewControllerIdentifiers.SelectServiceVC) as! SelectServiceVC
         }else if viewControllerType == .DashboardVC {
             viewController = storyboard.instantiateViewController(withIdentifier: ViewControllerIdentifiers.DashboardVC) as! DashboardVC
+        }else if viewControllerType == .SpacesVC {
+            viewController = storyboard.instantiateViewController(withIdentifier: ViewControllerIdentifiers.SpacesVC) as! SpacesVC
+        }else if viewControllerType == .BookingVC {
+            viewController = storyboard.instantiateViewController(withIdentifier: ViewControllerIdentifiers.BookingVC) as! BookingVC
+        }else if viewControllerType == .CardPaymentVC {
+            viewController = storyboard.instantiateViewController(withIdentifier: ViewControllerIdentifiers.CardPaymentVC) as! CardPaymentVC
         }else {
             print("Unknown view controller type")
         }

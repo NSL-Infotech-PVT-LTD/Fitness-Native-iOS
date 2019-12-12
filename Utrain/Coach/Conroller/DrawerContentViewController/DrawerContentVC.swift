@@ -40,5 +40,9 @@ extension DrawerContentVC : UITableViewDataSource,UITableViewDelegate{
         return cell
     }
     
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if let vc = ViewControllerHelper.getViewController(ofType: .SpacesVC) as? SpacesVC{
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
+    }
 }
