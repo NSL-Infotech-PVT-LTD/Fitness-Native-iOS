@@ -28,6 +28,8 @@
 		0D378E1B239FB93F00094F5A /* AboutUsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D378E1A239FB93F00094F5A /* AboutUsVC.swift */; };
 		0D3EC28423A2050B002BBE09 /* SessionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3EC28323A2050B002BBE09 /* SessionCell.swift */; };
 		0D3EC28723A20993002BBE09 /* FindSessionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3EC28623A20993002BBE09 /* FindSessionModel.swift */; };
+		0D4302DD23A350A90001D6D6 /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D4302DC23A350A90001D6D6 /* TabBar.storyboard */; };
+		0D4302DF23A355CB0001D6D6 /* TabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4302DE23A355CB0001D6D6 /* TabBarVC.swift */; };
 		0D4B1CB5239E545500F8F5D2 /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0D4B1CA2239E545300F8F5D2 /* Poppins-SemiBold.ttf */; };
 		0D4B1CB6239E545500F8F5D2 /* Poppins-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0D4B1CA3239E545400F8F5D2 /* Poppins-LightItalic.ttf */; };
 		0D4B1CB7239E545500F8F5D2 /* Poppins-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0D4B1CA4239E545400F8F5D2 /* Poppins-SemiBoldItalic.ttf */; };
@@ -51,6 +53,9 @@
 		0D934E40239FCEF900F4AE23 /* SelectSportsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D934E3F239FCEF900F4AE23 /* SelectSportsCell.swift */; };
 		0D934E42239FD2F800F4AE23 /* ServiceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D934E41239FD2F800F4AE23 /* ServiceCell.swift */; };
 		0D934E44239FDAC600F4AE23 /* spacesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D934E43239FDAC600F4AE23 /* spacesCell.swift */; };
+		0DA4B57C23A367120084FCCE /* CreateTrainingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA4B57B23A367120084FCCE /* CreateTrainingVC.swift */; };
+		0DA4B57F23A3767D0084FCCE /* CreateEventVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA4B57E23A3767D0084FCCE /* CreateEventVC.swift */; };
+		0DA4B58223A37A6A0084FCCE /* LocationOnMapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA4B58123A37A6A0084FCCE /* LocationOnMapVC.swift */; };
 		0DB9DD96239E51E4003D45E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB9DD95239E51E4003D45E9 /* AppDelegate.swift */; };
 		0DB9DD98239E51E4003D45E9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB9DD97239E51E4003D45E9 /* ViewController.swift */; };
 		0DB9DD9B239E51E4003D45E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DB9DD99239E51E4003D45E9 /* Main.storyboard */; };
@@ -88,6 +93,8 @@
 		0D378E1A239FB93F00094F5A /* AboutUsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsVC.swift; sourceTree = "<group>"; };
 		0D3EC28323A2050B002BBE09 /* SessionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionCell.swift; sourceTree = "<group>"; };
 		0D3EC28623A20993002BBE09 /* FindSessionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindSessionModel.swift; sourceTree = "<group>"; };
+		0D4302DC23A350A90001D6D6 /* TabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBar.storyboard; sourceTree = "<group>"; };
+		0D4302DE23A355CB0001D6D6 /* TabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarVC.swift; sourceTree = "<group>"; };
 		0D4B1CA2239E545300F8F5D2 /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
 		0D4B1CA3239E545400F8F5D2 /* Poppins-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-LightItalic.ttf"; sourceTree = "<group>"; };
 		0D4B1CA4239E545400F8F5D2 /* Poppins-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
@@ -111,6 +118,9 @@
 		0D934E3F239FCEF900F4AE23 /* SelectSportsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectSportsCell.swift; sourceTree = "<group>"; };
 		0D934E41239FD2F800F4AE23 /* ServiceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceCell.swift; sourceTree = "<group>"; };
 		0D934E43239FDAC600F4AE23 /* spacesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = spacesCell.swift; sourceTree = "<group>"; };
+		0DA4B57B23A367120084FCCE /* CreateTrainingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTrainingVC.swift; sourceTree = "<group>"; };
+		0DA4B57E23A3767D0084FCCE /* CreateEventVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateEventVC.swift; sourceTree = "<group>"; };
+		0DA4B58123A37A6A0084FCCE /* LocationOnMapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationOnMapVC.swift; sourceTree = "<group>"; };
 		0DB9DD92239E51E4003D45E9 /* Utrain.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Utrain.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DB9DD95239E51E4003D45E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0DB9DD97239E51E4003D45E9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -162,6 +172,9 @@
 		0D378DEB239FB57200094F5A /* Conroller */ = {
 			isa = PBXGroup;
 			children = (
+				0DA4B58023A37A4A0084FCCE /* LocationOnMapVC */,
+				0DA4B57D23A376670084FCCE /* Create Event */,
+				0DA4B57A23A366F70084FCCE /* CreateTraining Session  */,
 				0D0D38D323A114050014C2C0 /* DrawerContentViewController */,
 				0D0D38D023A113DF0014C2C0 /* FindSessionsVC */,
 				0D378E19239FB92400094F5A /* AboutUsVC */,
@@ -318,6 +331,15 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		0D4302DB23A350860001D6D6 /* TabBarViewController */ = {
+			isa = PBXGroup;
+			children = (
+				0D4302DC23A350A90001D6D6 /* TabBar.storyboard */,
+				0D4302DE23A355CB0001D6D6 /* TabBarVC.swift */,
+			);
+			path = TabBarViewController;
+			sourceTree = "<group>";
+		};
 		0D4B1CA0239E542200F8F5D2 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
@@ -355,6 +377,30 @@
 			path = Font;
 			sourceTree = "<group>";
 		};
+		0DA4B57A23A366F70084FCCE /* CreateTraining Session  */ = {
+			isa = PBXGroup;
+			children = (
+				0DA4B57B23A367120084FCCE /* CreateTrainingVC.swift */,
+			);
+			path = "CreateTraining Session ";
+			sourceTree = "<group>";
+		};
+		0DA4B57D23A376670084FCCE /* Create Event */ = {
+			isa = PBXGroup;
+			children = (
+				0DA4B57E23A3767D0084FCCE /* CreateEventVC.swift */,
+			);
+			path = "Create Event";
+			sourceTree = "<group>";
+		};
+		0DA4B58023A37A4A0084FCCE /* LocationOnMapVC */ = {
+			isa = PBXGroup;
+			children = (
+				0DA4B58123A37A6A0084FCCE /* LocationOnMapVC.swift */,
+			);
+			path = LocationOnMapVC;
+			sourceTree = "<group>";
+		};
 		0DB9DD89239E51E4003D45E9 = {
 			isa = PBXGroup;
 			children = (
@@ -376,6 +422,7 @@
 		0DB9DD94239E51E4003D45E9 /* Utrain */ = {
 			isa = PBXGroup;
 			children = (
+				0D4302DB23A350860001D6D6 /* TabBarViewController */,
 				0D4B1CA0239E542200F8F5D2 /* Helper */,
 				0DB9DDA9239E5219003D45E9 /* Coach */,
 				0DB9DD95239E51E4003D45E9 /* AppDelegate.swift */,
@@ -533,6 +580,7 @@
 				0D4B1CC1239E545500F8F5D2 /* Poppins-BoldItalic.ttf in Resources */,
 				0D4B1CB9239E545500F8F5D2 /* Poppins-ThinItalic.ttf in Resources */,
 				0D4B1CBB239E545500F8F5D2 /* Poppins-ExtraLight.ttf in Resources */,
+				0D4302DD23A350A90001D6D6 /* TabBar.storyboard in Resources */,
 				0D4B1CC7239E545500F8F5D2 /* Poppins-Medium.ttf in Resources */,
 				0D4B1CC2239E545500F8F5D2 /* Poppins-ExtraBoldItalic.ttf in Resources */,
 				0D4B1CC5239E545500F8F5D2 /* Poppins-Thin.ttf in Resources */,
@@ -624,11 +672,14 @@
 				0D934E44239FDAC600F4AE23 /* spacesCell.swift in Sources */,
 				0D378DFC239FB6F100094F5A /* SelectServiceVC.swift in Sources */,
 				0D378E18239FB91000094F5A /* SettingVC.swift in Sources */,
+				0D4302DF23A355CB0001D6D6 /* TabBarVC.swift in Sources */,
 				0DCEA3D2239E58B100129897 /* UIButton+Extension.swift in Sources */,
 				0D378DF4239FB61D00094F5A /* CompleateProfile.swift in Sources */,
 				0D378E0F239FB87400094F5A /* BookingDetailsVC.swift in Sources */,
 				0DCEA3DA239E58C400129897 /* ViewControllerHelper.swift in Sources */,
 				0DCEA3D4239E58B100129897 /* UIView+Extension.swift in Sources */,
+				0DA4B57C23A367120084FCCE /* CreateTrainingVC.swift in Sources */,
+				0DA4B57F23A3767D0084FCCE /* CreateEventVC.swift in Sources */,
 				0D378DFF239FB75900094F5A /* DashboardVC.swift in Sources */,
 				0D378E15239FB8D400094F5A /* NotificationVC.swift in Sources */,
 				0D0D38D523A114160014C2C0 /* DrawerContentVC.swift in Sources */,
@@ -643,6 +694,7 @@
 				0D934E3E239FC92C00F4AE23 /* SportsCell.swift in Sources */,
 				0DCEA3D7239E58BE00129897 /* Helper.swift in Sources */,
 				0D934E42239FD2F800F4AE23 /* ServiceCell.swift in Sources */,
+				0DA4B58223A37A6A0084FCCE /* LocationOnMapVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -39,6 +39,9 @@ class FindSessionsVC: UIViewController,GMSMapViewDelegate {
         
         
     }
+    @IBAction func currentLocationOnPress(_ sender: UIButton) {
+        
+    }
     
     func mapView(_ mapView: GMSMapView, didTapInfoWindowOf marker: GMSMarker) {
         print("Done")

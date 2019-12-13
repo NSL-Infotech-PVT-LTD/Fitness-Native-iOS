@@ -14,7 +14,9 @@ struct ViewControllerIdentifiers {
     static let SpacesVC                                 = "SpacesVC"
     static let BookingVC                                = "BookingVC"
     static let CardPaymentVC                            = "CardPaymentVC"
-    
+    static let CreateTrainingVC                         = "CreateTrainingVC"
+    static let CreateEventVC                            = "CreateEventVC"
+    static let LocationOnMapVC                          = "LocationOnMapVC"
 }
 
 import UIKit
@@ -29,6 +31,9 @@ enum ViewControllerType {
     case SpacesVC
     case BookingVC
     case CardPaymentVC
+    case CreateTrainingVC
+    case CreateEventVC
+    case LocationOnMapVC
 }
 
 class ViewControllerHelper: NSObject {
@@ -59,6 +64,12 @@ class ViewControllerHelper: NSObject {
             viewController = storyboard.instantiateViewController(withIdentifier: ViewControllerIdentifiers.BookingVC) as! BookingVC
         }else if viewControllerType == .CardPaymentVC {
             viewController = storyboard.instantiateViewController(withIdentifier: ViewControllerIdentifiers.CardPaymentVC) as! CardPaymentVC
+        }else if viewControllerType == .CreateTrainingVC {
+            viewController = storyboard.instantiateViewController(withIdentifier: ViewControllerIdentifiers.CreateTrainingVC) as! CreateTrainingVC
+        }else if viewControllerType == .CreateEventVC {
+            viewController = storyboard.instantiateViewController(withIdentifier: ViewControllerIdentifiers.CreateEventVC) as! CreateEventVC
+        }else if viewControllerType == .LocationOnMapVC {
+            viewController = storyboard.instantiateViewController(withIdentifier: ViewControllerIdentifiers.LocationOnMapVC) as! LocationOnMapVC
         }else {
             print("Unknown view controller type")
         }

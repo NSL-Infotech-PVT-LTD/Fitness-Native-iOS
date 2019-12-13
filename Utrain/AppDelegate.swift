@@ -27,9 +27,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let navigationController = UINavigationController(rootViewController: nextViewController)
         let appdelegate = UIApplication.shared.delegate as! AppDelegate
         appdelegate.window!.rootViewController = navigationController
+//        let tabBarController = window?.rootViewController as! UITabBarController
+//        let image = #imageLiteral(resourceName: "TabBack")
+//        let tabBarImage = resize(image: image, newWidth: tabBarController.view.frame.width)
+//        tabBarController.tabBar.backgroundImage = tabBarImage
         return true
     }
-
+    func resize(image: UIImage, newWidth: CGFloat) -> UIImage {
+        
+        UIGraphicsBeginImageContext(CGSize(width: newWidth, height: image.size.height))
+        image.draw(in: CGRect(x: 0, y: 0, width: newWidth, height: image.size.height)) // image.drawInRect( CGRect(x: 0, y: 0, width: newWidth, height: image.size.height))  in swift 2
+        let newImage = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        
+        return newImage!
+    }
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
         // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
